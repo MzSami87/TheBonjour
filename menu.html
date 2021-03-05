@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <title>Menu</title>
+
+</head>
+<body>
+    <div class="menu">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <div class="dropbtn"><a href="menu.html">Menu</a></div>
+                    <div class="dropdownLinks">
+                        <a href="menu_breakfast.html">Breakfast</a>
+                        <a href="menu_lunch.html">Lunch</a>
+                        <a href="menu_dinner.html">Dinner</a>
+                        <a href="dessert.html">Desserts</a>
+                        <a href="menu_bev.html">Beverages</a>
+                        </div>
+                        </div>
+                <a href="reservations.html">Reservation</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div id="menu">
+    <a href="menu_breakfast.html"></a>
+    <a href="menu_lunch.html"></a>
+    <a href="menu_dinner.html"></a>
+</div>
+
+<h1>MENU</h1>
+
+    <h2><button onclick="myFunction(this)">BREAKFAST</button></h2>
+    <h2><button onclick="myFunction(this)">LUNCH</button></h2>
+    <h2><button onclick="myFunction(this)">DINNER</button></h2>
+    <h2><button onclick="myFunction(this)">DESSERTS</button></h2>
+    <h2><button onclick="myFunction(this)">BEVERAGES</button></h2>
+    <footer>
+        <address>
+            234 Eatery Way<br>
+            Eatonville, USA 23456<br>
+            Phone: 123.456.7890<br>
+            <br>
+        </address>
+        <span>&copy;Bonjour</span>
+    </footer>
+
+    <script>
+
+    function myFunction(menu) {
+        if(menu.textContent == "BREAKFAST") {
+            location.replace("menu_breakfast.html");
+        } else if (menu.textContent == "LUNCH") {
+            location.replace("menu_lunch.html");
+        } else if (menu.textContent == "DINNER") {
+            location.replace("menu_dinner.html");
+        } else if(menu.textContent == "DESSERTS") {
+            location.replace("dessert.html");
+        }else {
+            location.replace("menu_bev.html");
+        }
+    }
+       
+    </script>
+
+
+
+</body>
+</html>

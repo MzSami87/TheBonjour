@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservations.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Carrois+Gothic+SC&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Make A Reservation</title>
+</head>
+<body>
+    <div class="menu">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <div class="dropbtn"><a href="menu.html">Menu</a></div>
+                    <div class="dropdownLinks">
+                        <a href="menu_breakfast.html">Breakfast</a>
+                        <a href="menu_lunch.html">Lunch</a>
+                        <a href="menu_dinner.html">Dinner</a>
+                        <a href="dessert.html">Desserts</a>
+                        <a href="menu_bev.html">Beverages</a>
+                        </div>
+                        </div>
+                <a href="reservations.html">Reservation</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<form id="res_contact" action="/" method="get">
+    <div class="container">
+<h1>Reservation</h1>
+<div class="glass">
+        <p class="instructions">Please fill out the form to make a reservation.</p>
+        </div>
+        <hr>
+
+        <label for="fname"><b>First Name</b></label><span id="error-name"></span>
+        <br>
+        <input type="text" id="fname" placeholder="Enter First Name" name="fname" required minlength="3" maxlength="100">
+        <br>
+
+        <label for="lname"><b>Last Name</b></label>
+        <br>
+        <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required minlength="3" maxlength="100">
+        <br>
+
+        <label for="email"><b>Email</b></label>
+        <br>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Email invalid. Format should be email123@email.com">
+        <br>
+
+        <label for="restype"><b>Reservation Type</b></label>
+        <br>
+        <select id="restype" name="restype" onchange="setNum()">
+            <option value="text">Select a Reservation Type</option>
+            <option value="Birthday">Birthday</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Private Room">Private Room</option>
+            <option value="Private Room Party">Private Room Party</option>
+            <option value="VIP">VIP</option>
+            <option value="Work Event">Work Event</option>
+        </select>
+        <br>
+
+        <label for="partynum"><b>Party Attendee Number</b></label>
+        <br>
+        <select id="party1">
+            <option value="partynum">Select Number of Guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+        </select>
+        <select id="party2" style = "display: none">
+            <option value="partynum">Select Number of Guests</option>
+                <option value="6-10">6-10</option>
+                <option value="11-15">11-15</option>
+                <option value="16-20">16-20</option>
+                <option value="21-25">21-25</option>
+                <option value="25+">25+</option>
+        </select>
+            <br>
+            <div class="num-container">
+<div id="num_msg">
+    <!-- Error Message -->
+</div>
+</div>
+        
+        <label for="date"><b>Date</b></label>
+        <br>
+        <input type="date" id="date" name="date" onchange="holidayDates()" min="2021-11-01" max="2021-12-31"
+        required>
+        <br>
+        <br>
+        <div class="date-container">
+            <div id="date_msg">
+                <!-- Error Message -->
+            </div>
+            </div>
+            
+        <label for="time"><b>Time</b></label>
+        <br>
+        <select id="restime" name="restime">
+            <option value="Select Time:">Select Time</option>
+            <option value="5:00 PM">5:00 PM</option>
+            <option value="5:30 PM">5:30 PM</option>
+            <option value="6:00 PM">6:00 PM</option>
+            <option value="6:30 PM">6:30 PM</option>
+            <option value="7:00 PM">7:00 PM</option>
+            <option value="7:30 PM">7:30 PM</option>
+            <option value="8:00 PM">8:00 PM</option>
+            <option value="8:30 PM">8:30 PM</option>
+            <option value="9:00 PM">9:00 PM</option>
+            <option value="9:30 PM">9:30 PM</option>
+        </select>
+        <br>
+        <br>
+        <div class="time-container">
+            <div id="time_msg">
+                 <!--Time Message  -->
+            </div>
+            </div>
+
+        <input type="submit" value="Submit">
+
+        <h2>***CANCELLATIONS***</h2>
+        <p><strong>Please call no later than 30 minutes before your reservation.</strong></p>
+        <div class="msg-container">
+            <div id="new">
+                <!-- Leave A Message! -->
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- <div id="tables">
+    <a href="tables.html"></a>
+    </div> -->
+
+    <div id="select">
+    <h2><button onclick="myFunction(this)">TABLE AVAILABILITY</button></h2>
+    <p class="hide">Hate long wait times?<br>Check here for our occupancy!</p>
+    </div>
+
+<footer>
+    <address>
+        234 Eatery Way<br>
+        Eatonville, USA 23456<br>
+        Phone: 123.456.7890<br>
+        <br>
+    </address>
+    <span>&copy;Bonjour</span>
+</footer>
+
+<script src="script.js"></script>
+<script src="tables.js"></script>
+<script>
+
+function myFunction(tables) {
+    if(tables.textContent == "TABLE AVAILABILITY") {
+        location.replace("tables.html");
+    }
+}
+</script>
+</body>
+</html>

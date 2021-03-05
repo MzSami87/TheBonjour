@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Carrois+Gothic+SC&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="menu">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <div class="dropbtn"><a href="menu.html">Menu</a></div>
+                    <div class="dropdownLinks">
+                        <a href="menu_breakfast.html">Breakfast</a>
+                        <a href="menu_lunch.html">Lunch</a>
+                        <a href="menu_dinner.html">Dinner</a>
+                        <a href="dessert.html">Desserts</a>
+                        <a href="menu_bev.html">Beverages</a>
+                        </div>
+                        </div>
+                <a href="reservations.html">Reservation</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<h1>Contact</h1>
+
+<div class="container">
+    <form id="form" method="post" action="/">
+
+            <label for="name">Name</label>
+            <br>
+            <input type="text" id="name" placeholder="Name:" required minlength="3" maxlength="100">
+            <br>
+
+            <label for="email">Email</label>
+            <br>
+            <input type="text" id="email" placeholder="Email:" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Email invalid. Format should be email123@email.com">
+            <br>
+
+            <label for="phone">Phone Number</label>
+            <br>
+            <input type="phone" id="phone" placeholder="Phone Number:" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            title="555-555-5555">
+            <br>
+
+            <label for="text">Comment</label>
+            <br>
+            <textarea id="comment" name="comment" placeholder="Comment:" required minlength="3" maxlength="200"></textarea>
+            <br>
+
+            <input type="submit" value="Submit">
+            <br>
+            <br>
+            <div class="msg-container">
+                <div id="new">
+                    <!-- Leave A Message! -->
+                </div>
+            </div>
+
+    </form>
+</div>
+
+        <footer>
+            <address>
+                234 Eatery Way<br>
+                Eatonville, USA 23456<br>
+                Phone: 123.456.7890<br>
+                <br>
+            </address>
+            <span>&copy;Bonjour</span>
+        </footer>
+
+<!-- Script -->
+<script src="contact.js"></script>
+<script src="server.js"></script>
+    </body>
+    </html>

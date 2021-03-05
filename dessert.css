@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-image: url("images/dessert.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+    opacity: 0.95;
+  }
+  
+  .menu {
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  ul li {
+    text-align: end;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    list-style-type: none;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  /* Dropdown */
+.dropdown {
+  position: relative;
+  display:inline-block;
+}
+
+.dropdownLinks {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdownLinks a {
+  background-color: black;
+  text-decoration: none;
+  display: block;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.dropdownLinks a:hover {
+  background: gray;
+}
+
+.dropdown:hover .dropdownLinks {
+  display: block;
+}
+  
+  img {
+    width: 50%;
+    opacity: 0.95;
+    display: flex;
+    border-radius: 70%;
+    border-color: transparent;
+    box-shadow: 5px 10px 10px 10px black;
+    outline: none;
+  }
+  
+  h1 {
+    font-family: "Carrois Gothic", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 110px;
+    text-shadow: 10px 10px 10px black;
+  }
+  
+  .subheader {
+    font-size: 47px;
+    color: black;
+  }
+  
+  h2 {
+    font-family: "Carrois Gothic", sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    text-shadow: 2px 5px 5px silver;
+    border: none;
+  }
+  h2:hover {
+    transform: scale(1.75);
+  }
+
+  h3 {
+    font-family: "Carrois Gothic", sans-serif;
+      text-align: center;
+      font-size: 35px;
+      color:whitesmoke;
+      text-shadow: 7px 2px 5px black;
+  }
+
+  h4 {
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 5px 5px black;
+    text-align: center;
+  }
+  
+  button {
+    font-family: "Carrois Gothic", sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 5px 5px whitesmoke;
+    border: none;
+    background-color: transparent;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  @media screen and (max-width: 600px) {
+    html {
+      background-size:cover;
+      background-position:center;
+    }
+    ul li {
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      text-transform: uppercase;
+      font-size: 10px;
+      list-style-type: none;
+    }
+    h1 {
+      font-size:60px;
+    }
+    h3 {
+      font-size:25px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    html {
+      background-size: cover;
+      background-position: center;
+      height:100%;
+    }
+  }
