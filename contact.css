@@ -214,7 +214,7 @@ footer {
 
 @media screen and (min-width: 921px) and (max-width: 1750px) {
   ul li {
-    text-align: center;
+    text-align: end;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     /* font-size: 12px; */

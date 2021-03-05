@@ -134,7 +134,7 @@ footer {
 
 
   ul li {
-    text-align: center;
+    text-align: end;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     /* font-size: 12px; */
@@ -154,7 +154,7 @@ footer {
     margin:auto;
   }
   p{
-    font-size:20px;
-    margin:20%;
+    font-size:25px;
+    margin:10%;
   }
 }

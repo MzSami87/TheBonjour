@@ -205,8 +205,8 @@
       background-color: black;
       padding-top: 15px;
       padding-bottom: 15px;
-      display: flex;
-      justify-content: center;
+      /* display: flex;
+      justify-content: center; */
     }
     h2 {
       font-size: 22px;
