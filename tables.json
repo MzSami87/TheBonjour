@@ -1,62 +1,62 @@
 [
     {
-        "table": "1",
+        "table": "TABLE 1",
         "occupied": false
     },
     {
-        "table": "2",
+        "table": "TABLE 2",
         "occupied": true
     },
     {
-        "table": "3",
+        "table": "TABLE 3",
         "occupied": true
     },
     {
-        "table": "4",
+        "table": "TABLE 4",
         "occupied": false
     },
     {
-        "table": "5",
+        "table": "TABLE 5",
         "occupied": true
     },
     {
-        "table": "6",
+        "table": "TABLE 6",
         "occupied": true
     },
     {
-        "table": "7",
+        "table": "TABLE 7",
         "occupied": true
     },
     {
-        "table": "8",
+        "table": "TABLE 8",
         "occupied": false
     },
     {
-        "table": "9",
+        "table": "TABLE 9",
         "occupied": false
     },
     {
-        "table": "10",
+        "table": "TABLE 10",
         "occupied": true
     },
     {
-        "table": "11",
+        "table": "TABLE 11",
         "occupied": true
     },
     {
-        "table": "12",
+        "table": "TABLE 12",
         "occupied": true
     },
     {
-        "table": "13",
+        "table": "TABLE 13",
         "occupied": false
     },
     {
-        "table": "14",
+        "table": "TABLE 14",
         "occupied": false
     },
     {
-        "table": "15",
+        "table": "TABLE 15",
         "occupied": true
     }
 ]
