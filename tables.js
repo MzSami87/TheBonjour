@@ -1,4 +1,4 @@
-let xhr = new XMLHttpRequest();
+var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function () {
     if(xhr.readyState === 4) {
     var tables = JSON.parse(xhr.responseText);
@@ -15,7 +15,7 @@ xhr.onreadystatechange = function () {
 }
 
 statusHTML += '</ul>';
-document.getElementById('tables').innerHTML = statusHTML;
+document.getElementById('list').innerHTML = statusHTML;
     }
 };
 xhr.open('GET', 'tables.json');
