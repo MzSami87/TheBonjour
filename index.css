@@ -24,6 +24,10 @@ ul li {
   list-style-type: none;
 }
 
+.title {
+font-family: 'Ribeye Marrow', cursive;
+}
+
 /* Dropdown */
 .dropdown {
   position: relative;
