@@ -93,7 +93,7 @@ h1 {
     text-align: center;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
-    font-size: 8px;
+    font-size: 7.8px;
     list-style-type: none;
   }
   html {
@@ -107,6 +107,8 @@ h1 {
     /* display: contents; */
     display:flex;
     font-size: 60px;
+    margin-top:125px;
+    margin-bottom:125px;
   }
   .animate__animated.animate__slideInDown{
     --animate-duration: 2s;
