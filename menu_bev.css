@@ -66,10 +66,7 @@
 .dropdown:hover .dropdownLinks {
   display: block;
 }
-  
-
-
-  img {
+img {
     width: 50%;
     opacity: 0.95;
     display: flex;
@@ -79,7 +76,7 @@
     outline: none;
   }
   
-  h1 {
+h1 {
     font-family: "Carrois Gothic", sans-serif;
     color: white;
     text-align: center;
@@ -87,12 +84,12 @@
     text-shadow: 10px 10px 10px black;
   }
   
-  .subheader {
+.subheader {
     font-size: 47px;
     color: black;
   }
   
-  h2 {
+h2 {
     font-family: "Carrois Gothic", sans-serif;
     text-align: center;
     color: black;
@@ -101,7 +98,7 @@
     border: none;
   }
 
-  h3 {
+h3 {
     font-family: "Carrois Gothic", sans-serif;
       text-align: center;
       font-size: 36px;
@@ -110,7 +107,7 @@
       margin-top:-10px;
   }
 
-  h4 {
+h4 {
     font-size: 15px;
     font-style: italic;
     color: white;
@@ -118,17 +115,17 @@
     text-align: center;
   }
 
-  .row {
+.row {
       display: flex;
   }
 
-  .column {
+.column {
       flex: 50%;
       padding:10px;
       line-height:2;
   }
   
-  button {
+button {
     font-family: "Carrois Gothic", sans-serif;
     text-align: center;
     color: black;
@@ -178,7 +175,7 @@
       text-align: center;
       /* margin-top: 200px; */
       position: absolute;
-      bottom: -220px;
+      bottom: -1000px;
       width: -webkit-fill-available;
       /* width: 100%; */
       margin: auto;
@@ -207,6 +204,12 @@
       padding-bottom: 15px;
       /* display: flex;
       justify-content: center; */
+    }
+    h2 {
+      font-size: 40px;
+    }
+    .row {
+      display: block;
     }
   }
 
