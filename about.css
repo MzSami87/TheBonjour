@@ -121,13 +121,27 @@ footer {
     text-align: center;
   }
   img {
-    width: 350px;
+    width: 100%;
   }
   p{
     font-size: 20px;
     color:black;
     text-shadow: 2px 2px 2px floralwhite;
   }
+  .menu {
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    /* background: url(images/about_bg.jpg) no-repeat center center fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 }
 
 @media screen and (min-width: 601px) and (max-width: 1715px) {
@@ -149,7 +163,7 @@ footer {
     font-size:80px;
   }
   img {
-    width: 65%;
+    /* width: 65%; */
     display:flex;
     margin:auto;
   }
