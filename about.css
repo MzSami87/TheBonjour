@@ -24,7 +24,7 @@ html {
 } */
 
 html {
-  background-image: url("images/chef1.png");
+  background-image: url("images/chef1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -105,9 +105,11 @@ img {
 
 p {
   display: block;
-  color: black;
-  text-shadow: 3px 2px 2px floralwhite;
-  margin-top:70px;
+  color: lightgray;
+  text-shadow: 3px 2px 2px black;
+  /* margin-top:70px; */
+  margin: 200px 400px 200px 400px;
+  text-align: center;
 }
 
 footer {
@@ -136,8 +138,13 @@ footer {
   }
   p{
     font-size: 20px;
-    color:black;
-    text-shadow: 2px 2px 2px floralwhite;
+    color:lightgray;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
   .menu {
     background-color: black;
