@@ -10,7 +10,7 @@
   filter: grayscale(60%);
   mix-blend-mode: darken;
 } */
-
+/* 
 html { 
   background: url(images/about_bg.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -19,6 +19,17 @@ html {
   background-size: cover;
   filter: grayscale(60%);
   mix-blend-mode: darken;
+  overflow: -moz-hidden-unscrollable;
+  overflow:hidden;
+} */
+
+html {
+  background-image: url("images/chef1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.95;
+  overflow-x: hidden;
 }
 
 .menu {
@@ -136,12 +147,12 @@ footer {
     justify-content: center;
 }
 
-html {
-    /* background: url(images/about_bg.jpg) no-repeat center center fixed; */
+/* html {
+  background: url(images/about_bg.png) no-repeat center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 }
 
 @media screen and (min-width: 601px) and (max-width: 1715px) {
